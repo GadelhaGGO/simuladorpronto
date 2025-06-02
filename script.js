@@ -156,7 +156,7 @@ let falhaMensagem = '';
 let falhaAudioIsPlaying = false;
 
 // Caminho do áudio (ajustado para pasta local do usuário)
-const FALHA_AUDIO_PATH = "C:\\Users\\Moninha\\Desktop\\Nova pasta (2)\\DANGER Alarm Sound Effects.mp3"; // Nome do arquivo na mesma pasta do HTML/script
+const FALHA_AUDIO_PATH = "DANGER Alarm Sound Effects.mp3"; // Nome do arquivo na mesma pasta do HTML/script
 
 function resetarTudo() {
   pararTimer();
