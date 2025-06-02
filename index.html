@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simulação Linha 5 Lilás</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Simulação da Linha 5 Lilás</h1>
+    <div class="trem-info">
+      <div><span class="trem-marker trem1-marker"></span> Trem 1 (Verde)</div>
+      <div><span class="trem-marker trem2-marker"></span> Trem 2 (Azul)</div>
+      <div><span class="trem-marker trem3-marker"></span> Trem 3 (Laranja)</div>
+      <div><span class="trem-marker trem4-marker"></span> Trem 4 (Verde Claro)</div>
+      <div><span class="trem-marker trem5-marker"></span> Trem 5 (Roxo)</div>
+<div><span class="trem-marker ativa-trem-amareloescuro"></span> Trem 6 (Amarelo Escuro)</div>
+<div><span class="trem-marker ativa-trem-preta"></span> Trem 7 (Preto)</div>
+<div><span class="trem-marker ativa-trem-cinza"></span> Trem 8 (Cinza)</div>
+<div><span class="trem-marker ativa-trem-marrom"></span> Trem 9 (Marrom)</div>
+<div><span class="trem-marker ativa-trem-roxa"></span> Trem 10 (Roxa)</div>
+<div><span class="trem-marker ativa-trem-azulclaro"></span> Trem 16 (Azul Claro)</div>
+<div><span class="trem-marker ativa-trem-verdeescuro"></span> Trem 17 (Verde Escuro)</div>
+<div><span class="trem-marker ativa-trem-laranja"></span> Trem 18 (Laranja)</div>
+<div><span class="trem-marker ativa-trem-rosa"></span> Trem 19 (Rosa)</div>
+<div><span class="trem-marker ativa-trem-amareloescuro"></span> Trem 20 (Amarelo Escuro)</div>
+<div><span class="trem-marker ativa-trem-marrom"></span> Trem 21 (Marrom)</div>
+<div><span class="trem-marker ativa-trem-preta"></span> Trem 22 (Preto)</div>
+<div><span class="trem-marker ativa-trem-rosa"></span> Trem 23 (Rosa)</div>
+<div><span class="trem-marker ativa-trem-cinza"></span> Trem 24 (Cinza)</div>
+    </div>
+    <div class="via-label">Via 1 - Capão Redondo ⬅ Chácara Klabin</div>
+    <div class="linha-container">
+      <div class="linha" id="linha-estacoes">
+        <div class="estacao" id="est1">Capão<br>Redondo<br>🔁</div>
+        <div class="estacao" id="est2">Campo<br>Limpo</div>
+        <div class="estacao" id="est3">Vila das<br>Belezas</div>
+        <div class="estacao" id="est4">Giovanni<br>Gronchi</div>
+        <div class="estacao" id="est5">Santo<br>Amaro<br>🔁 9</div>
+        <div class="estacao" id="est6">Largo<br>Treze</div>
+        <div class="estacao" id="est7">Adolfo<br>Pinheiro</div>
+        <div class="estacao" id="est8">Alto da<br>Boa Vista<br>⬇</div>
+        <div class="estacao" id="est9">Borba<br>Gato<br>⬇</div>
+        <div class="estacao" id="est10">Brooklin<br>⬇</div>
+        <div class="estacao" id="est11">Campo<br>Belo<br>⬇</div>
+        <div class="estacao" id="est12">Eucaliptos</div>
+        <div class="estacao" id="est13">Moema</div>
+        <div class="estacao" id="est14">AACD<br>Servidor</div>
+        <div class="estacao" id="est15">Hospital<br>São Paulo</div>
+        <div class="estacao" id="est16">Santa<br>Cruz<br>🔁 1</div>
+        <div class="estacao" id="est17">Chácara<br>Klabin<br>🔁 2</div>
+      </div>
+    </div>
+    <div class="via-label">Via 2 - Capão Redondo ➡ Chácara Klabin</div>
+    <div class="linha-container">
+      <div class="linha" id="linha-estacoes-via2">
+        <div class="estacao" id="est1-v2">Capão<br>Redondo<br>🔁</div>
+        <div class="estacao" id="est2-v2">Campo<br>Limpo</div>
+        <div class="estacao" id="est3-v2">Vila das<br>Belezas</div>
+        <div class="estacao" id="est4-v2">Giovanni<br>Gronchi</div>
+        <div class="estacao" id="est5-v2">Santo<br>Amaro<br>🔁 9</div>
+        <div class="estacao" id="est6-v2">Largo<br>Treze</div>
+        <div class="estacao" id="est7-v2">Adolfo<br>Pinheiro</div>
+        <div class="estacao" id="est8-v2">⬆<br>Alto da<br>Boa Vista</div>
+        <div class="estacao" id="est9-v2">⬆<br>Borba<br>Gato</div>
+        <div class="estacao" id="est10-v2">⬆<br>Brooklin</div>
+        <div class="estacao" id="est11-v2">⬆<br>Campo<br>Belo</div>
+        <div class="estacao" id="est12-v2">Eucaliptos</div>
+        <div class="estacao" id="est13-v2">Moema</div>
+        <div class="estacao" id="est14-v2">AACD<br>Servidor</div>
+        <div class="estacao" id="est15-v2">Hospital<br>São Paulo</div>
+        <div class="estacao" id="est16-v2">Santa<br>Cruz<br>🔁 1</div>
+        <div class="estacao" id="est17-v2">Chácara<br>Klabin<br>🔁 2</div>
+      </div>
+    </div>
+    <div id="status-trens" class="status-container"></div>
+    <div class="tempo" id="tempo">Tempo total: 0s</div>
+<div id="pote-counter" style="margin: 10px 0; font-size: 18px; font-weight: bold;">
+    Trens operando - POTE: <span id="pote-value">0</span>/24
+</div>
+    <div class="controls">
+      <button class="btn-iniciar" onclick="iniciarTrens()">Iniciar Trens</button>
+      <button class="btn-parar" id="btnReterTrens" onclick="toggleReterTrens()">Reter Trens</button>
+      <button class="btn-normalizar" onclick="normalizarLinha()">Normalizar Linha</button>
+      <select id="tremRecolherSelect">
+        <option value="">Selecione o trem</option>
+        <option value="1">Trem 1</option>
+        <option value="2">Trem 2</option>
+        <option value="3">Trem 3</option>
+        <option value="4">Trem 4</option>
+        <option value="5">Trem 5</option>
+      </select>
+      <button class="btn-recolher" onclick="recolherTrem()">Recolher Trem</button>
+      <button class="btn-inserir-trem" onclick="abrirInserirTrem()">Inserir Trem</button>
+      <div id="modalInserirTrem" style="display:none; position:fixed; top:0;left:0;width:100vw;height:100vh;z-index:1000;background:#0005;">
+        <div style="background:#fff;padding:20px;max-width:320px;margin:60px auto;border-radius:8px;box-shadow:0 4px 20px #0002;position:relative;">
+          <h3>Inserir Trem Recolhido</h3>
+          <select id="tremInserirSelect" style="margin-bottom:12px;width:100%;">
+            <option value="">Selecione um trem</option>
+          </select>
+          <button onclick="inserirTremRecolhido()" class="btn-inserir-trem" style="margin-right:8px;">Inserir</button>
+          <button onclick="fecharInserirTrem()" style="background:#bbb;">Cancelar</button>
+        </div>
+      </div>
+      <select id="falhaTipoSelect">
+  <option value="estacao">Falha no Trem</option>
+  <option value="trem1">Falha no Trem 1</option>
+  <option value="trem2">Falha no Trem 2</option>
+  <option value="trem3">Falha no Trem 3</option>
+  <option value="trem4">Falha no Trem 4</option>
+  <option value="trem5">Falha no Trem 5</option>
+</select>
+
+<select id="falhaSelect">
+  <option value="">Selecione uma estação</option>
+  <option value="est1">Capão Redondo</option>
+  <option value="est2">Campo Limpo</option>
+  <option value="est3">Vila das Belezas</option>
+  <option value="est4">Giovanni Gronchi</option>
+  <option value="est5">Santo Amaro</option>
+  <option value="est6">Largo Treze</option>
+  <option value="est7">Adolfo Pinheiro</option>
+  <option value="est8">Alto da Boa Vista</option>
+  <option value="est9">Borba Gato</option>
+  <option value="est10">Brooklin</option>
+  <option value="est11">Campo Belo</option>
+  <option value="est12">Eucaliptos</option>
+  <option value="est13">Moema</option>
+  <option value="est14">AACD Servidor</option>
+  <option value="est15">Hospital São Paulo</option>
+  <option value="est16">Santa Cruz</option>
+  <option value="est17">Chácara Klabin</option>
+</select>
+
+<!-- NOVOS SELECTS necessários para funcionamento do botão Aplicar Falha -->
+<select id="falhaEstacaoTipo">
+  <option value="">Tipo de falha na estação</option>
+</select>
+
+<select id="falhaTremTipo">
+  <option value="">Tipo de falha no trem</option>
+</select>
+
+      <button class="btn-falha" onclick="aplicarFalha()">Aplicar Falha</button>
+      <button class="btn-falha" onclick="aplicarFalhaAleatoria()">Falha Aleatória</button>
+      <button class="btn-download" onclick="baixarCSV()">Baixar Histórico CSV</button>
+      <button class="btn-reset-historico" onclick="resetarTudo()">Resetar Tudo</button>
+    </div>
+    <div class="falha-info" id="falha-info"></div>
+  </div>
+  <div class="historico-container">
+    <div class="historico-title">Histórico de Eventos</div>
+    <table id="historico-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Momento (s)</th>
+          <th>Evento</th>
+          <th>Detalhes</th>
+        </tr>
+      </thead>
+      <tbody id="historico-tbody"></tbody>
+    </table>
+  </div>
+  <audio id="falha-audio" src="C:\Users\Moninha\Desktop\Nova pasta (2)\DANGER Alarm Sound Effects.mp3" preload="auto" controls></audio>
+  <script src="script.js"></script>
+  <footer style="position: fixed; right: 0; bottom: 0; padding: 10px; background: transparent; font-family: sans-serif;">
+    <span style="font-size: 14px; color: #444;">Gadelha Simulador Linha 5</span>
+  </footer>
+</body>
+</html>
